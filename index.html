@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Roadmap</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #84fab0, #8fd3f4);
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+      font-size: 2.5rem;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .roadmap-container {
+      width: 90%;
+      max-width: 800px;
+      margin: 30px auto;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Timeline Styles */
+    .timeline {
+      position: relative;
+      margin: 20px 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 4px;
+      height: 100%;
+      background: #ddd;
+      transform: translateX(-50%);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin: 30px 0;
+    }
+
+    .timeline-item .timeline-content {
+      position: relative;
+      width: 45%;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content {
+      left: 0;
+    }
+
+    .timeline-item:nth-child(even) .timeline-content {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .timeline-item:hover .timeline-content {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .timeline-content h2 {
+      font-size: 1.5rem;
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+
+    .timeline-content p {
+      margin: 10px 0;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .timeline-content ul {
+      padding-left: 20px;
+      list-style-type: square;
+    }
+
+    .timeline-content ul li {
+      margin: 5px 0;
+    }
+
+    /* Icons */
+    .timeline-content .icon {
+      font-size: 2rem;
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Web Development Roadmap</h1>
+  <div class="roadmap-container">
+    <div class="timeline">
+      <!-- Step 1 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="icon">🌐</div>
+          <h2>1. الأساسيات</h2>
+          <p>تعلم كيف يعمل الويب وأساسياته:</p>
+          <ul>
+            <li>HTTP/HTTPS.</li>
+            <li>طلبات GET و POST.</li>
+            <li>كيفية عرض المتصفح لصفحات الويب.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Step 2 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="icon">📄</div>
+          <h2>2. HTML & CSS</h2>
+          <p>ابدأ ببناء وتصميم صفحات الويب:</p>
+          <ul>
+            <li>تعلم هيكلة الصفحات بـ HTML.</li>
+            <li>تصميم صفحات متجاوبة بـ CSS.</li>
+            <li>التمرين على بناء صفحات بسيطة.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Step 3 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="icon">💻</div>
+          <h2>3. JavaScript (JS)</h2>
+          <p>فهم لغة البرمجة JavaScript:</p>
+          <ul>
+            <li>أساسيات اللغة: المتغيرات والحلقات والدوال.</li>
+            <li>DOM Manipulation.</li>
+            <li>Async/Promises و JSON.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Step 4 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="icon">🖥️</div>
+          <h2>4. PHP</h2>
+          <p>تعلم البرمجة الخلفية باستخدام PHP:</p>
+          <ul>
+            <li>أساسيات اللغة وكيفية عملها على الخادم.</li>
+            <li>إرسال واستقبال البيانات مع قواعد البيانات.</li>
+            <li>بناء تطبيقات ديناميكية.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Step 5 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="icon">🗄️</div>
+          <h2>5. قواعد البيانات</h2>
+          <p>إدارة البيانات باستخدام SQL:</p>
+          <ul>
+            <li>استعلامات SELECT، INSERT، UPDATE، DELETE.</li>
+            <li>العلاقات بين الجداول.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Step 6 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="icon">📂</div>
+          <h2>6. Git و GitHub</h2>
+          <p>تنظيم المشاريع باستخدام:</p>
+          <ul>
+            <li>Git Commit، Push، Pull.</li>
+            <li>التعاون مع فريق باستخدام GitHub.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Step 7 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="icon">🚀</div>
+          <h2>7. تحسين المهارات المتقدمة</h2>
+          <p>تعلم Frameworks واستخدام APIs:</p>
+          <ul>
+            <li>Laravel أو React.</li>
+            <li>REST APIs واستخدام Postman.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="roadmap-container">
+    <div class="timeline">
+      <!-- Step 8 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="icon">📈</div>
+          <h2>8. تحسين أمان التطبيقات</h2>
+          <p>تعلم كيفية حماية تطبيقات الويب من الهجمات:</p>
+          <ul>
+            <li>SQL Injection.</li>
+            <li>Cross-Site Scripting (XSS).</li>
+            <li>أفضل ممارسات تخزين البيانات الحساسة.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Step 9 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="icon">🚀</div>
+          <h2>9. نشر التطبيق (Deployment)</h2>
+          <p>تعلم كيفية نشر تطبيق الويب:</p>
+          <ul>
+            <li>إعداد الخادم باستخدام Apache أو Nginx.</li>
+            <li>نشر التطبيقات باستخدام منصات مثل Heroku أو Vercel.</li>
+            <li>التعامل مع خدمات DNS والـ SSL Certificates.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Step 10 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="icon">🛠️</div>
+          <h2>10. مشروع متكامل</h2>
+          <p>بناء مشروع عملي يشمل جميع التقنيات المكتسبة:</p>
+          <ul>
+            <li>واجهة Frontend متجاوبة وجذابة.</li>
+            <li>Backend يدير البيانات والخدمات.</li>
+            <li>قاعدة بيانات لتخزين البيانات بفعالية.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Step 11 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="icon">📚</div>
+          <h2>11. مصادر إضافية</h2>
+          <p>تعمق أكثر من خلال:</p>
+          <ul>
+            <li>قراءة الوثائق الرسمية مثل MDN وW3Schools.</li>
+            <li>متابعة كورسات مجانية مثل FreeCodeCamp وThe Odin Project.</li>
+            <li>حل مشكلات برمجية على مواقع مثل HackerRank وLeetCode.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Step 12 -->
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <div class="icon">🔁</div>
+          <h2>12. استمرارية التعلم</h2>
+          <p>ابقَ على اطلاع دائم بالتقنيات الحديثة من خلال:</p>
+          <ul>
+            <li>متابعة المدونات التقنية مثل Smashing Magazine.</li>
+            <li>المشاركة في مشاريع مفتوحة المصدر.</li>
+            <li>قراءة كتب تطوير الويب المتقدمة.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
